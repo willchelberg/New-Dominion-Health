@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Test Blog Post - Will Chelberg</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1A2227;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #64767C;
+      margin-bottom: 30px;
+    }
+    button {
+      background: #64767C;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    button:hover {
+      background: #6E6D5F;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    .success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    .info {
+      background: #F1EFED;
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    .info h3 {
+      margin-top: 0;
+      color: #6E6D5F;
+    }
+    .info ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .info li {
+      margin: 5px 0;
+      color: #1A2227;
+    }
+    .code {
+      background: #1A2227;
+      color: #F1EFED;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 Create Test Blog Post</h1>
+    <p class="subtitle">This will create a test article by Will Chelberg with author name mentions in the content</p>
+    
+    <div class="info">
+      <h3>📝 What This Will Create:</h3>
+      <ul>
+        <li><strong>Title:</strong> Understanding Biblical Health: A Foundation for Wellness</li>
+        <li><strong>Author:</strong> Will Chelberg</li>
+        <li><strong>Content:</strong> Includes multiple mentions of "Will Chelberg" to test auto-linking</li>
+        <li><strong>Category:</strong> Faith & Health</li>
+        <li><strong>Featured:</strong> Yes</li>
+      </ul>
+      <p style="margin-top: 15px; color: #64767C;">
+        After creating, navigate to the blog and click on this article. You should see the author name mentions automatically turned into clickable links!
+      </p>
+    </div>
+
+    <button id="createBtn" onclick="createTestPost()">Create Test Post</button>
+    
+    <div id="result"></div>
+  </div>
+
+  <script>
+    // IMPORTANT: Replace these with your actual values from /utils/supabase/info.tsx
+    const PROJECT_ID = 'YOUR_PROJECT_ID'; // Replace with your Supabase project ID
+    const PUBLIC_ANON_KEY = 'YOUR_ANON_KEY'; // Replace with your Supabase anon key
+
+    async function createTestPost() {
+      const btn = document.getElementById('createBtn');
+      const resultDiv = document.getElementById('result');
+      
+      btn.disabled = true;
+      btn.textContent = 'Creating...';
+      resultDiv.innerHTML = '';
+
+      const testPost = {
+        title: "Understanding Biblical Health: A Foundation for Wellness",
+        slug: "understanding-biblical-health-foundation-wellness",
+        excerpt: "Exploring how Scripture provides the foundation for a Christ-centered approach to physical wellness and stewardship of our bodies.",
+        content: `<p>When we talk about health and wellness from a Christian perspective, we must first ground ourselves in what Scripture teaches us about our bodies and their purpose.</p>
+
+<p>As Will Chelberg often explains, our bodies are not our own—they belong to God. The Apostle Paul reminds us in 1 Corinthians 6:19-20 that our bodies are temples of the Holy Spirit. This isn't just poetic language; it's a profound theological truth that should shape how we think about physical health.</p>
+
+<h2>The Theology of Stewardship</h2>
+
+<p>According to Will Chelberg, understanding health through a biblical lens means recognizing it as an act of stewardship rather than self-improvement. We don't pursue wellness to glorify ourselves, but to better serve God and our neighbors.</p>
+
+<p>This perspective shifts everything. When Will Chelberg talks about exercise, nutrition, or rest, he's not speaking merely about physical optimization—he's addressing how we honor the Creator through caring for His creation.</p>
+
+<h2>Christ at the Center</h2>
+
+<p>The danger in modern wellness culture is that it often becomes self-focused and self-reliant. Will Chelberg warns against this trap, reminding us that even our best efforts at health mean nothing apart from Christ.</p>
+
+<p>True wellness, as Will Chelberg emphasizes, flows from our relationship with Christ. When we are rooted in Him, our approach to health becomes an expression of gratitude and worship rather than anxiety or pride.</p>
+
+<h2>Practical Application</h2>
+
+<p>So what does this look like in daily life? Will Chelberg encourages believers to:</p>
+
+<ul>
+  <li>Start each day acknowledging that your body belongs to God</li>
+  <li>Make health decisions based on biblical principles, not cultural trends</li>
+  <li>Pursue wellness as a means to better serve others, not just yourself</li>
+  <li>Rest in God's grace when you fall short</li>
+</ul>
+
+<p>As we journey toward better health, let's remember the words Will Chelberg often shares: "Our goal isn't perfection, but faithfulness. We steward our bodies not to earn God's love, but because we've already received it."</p>`,
+        imageUrl: "https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?w=1200&h=800&fit=crop",
+        author: "Will Chelberg",
+        authorLogoUrl: "",
+        category: "Faith & Health",
+        featured: true,
+        publishedAt: new Date().toISOString(),
+        status: "published"
+      };
+
+      try {
+        const response = await fetch(
+          `https://${PROJECT_ID}.supabase.co/functions/v1/make-server-19263118/posts`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${PUBLIC_ANON_KEY}`,
+              'apikey': PUBLIC_ANON_KEY
+            },
+            body: JSON.stringify(testPost)
+          }
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          resultDiv.innerHTML = `
+            <div class="result success">
+              <strong>✅ Success!</strong><br>
+              Test blog post created successfully!<br><br>
+              <strong>Next steps:</strong><br>
+              1. Go to your website<br>
+              2. Navigate to the Blog page<br>
+              3. Click on "Understanding Biblical Health: A Foundation for Wellness"<br>
+              4. Look for "Will Chelberg" mentions in the article - they should be clickable links!<br>
+              5. Click on a "Will Chelberg" link to go to the bio page
+            </div>
+          `;
+        } else {
+          const errorText = await response.text();
+          resultDiv.innerHTML = `
+            <div class="result error">
+              <strong>❌ Error</strong><br>
+              ${errorText}
+            </div>
+          `;
+        }
+      } catch (error) {
+        resultDiv.innerHTML = `
+          <div class="result error">
+            <strong>❌ Error</strong><br>
+            ${error.message}<br><br>
+            <strong>Make sure to:</strong><br>
+            1. Replace PROJECT_ID and PUBLIC_ANON_KEY in the script<br>
+            2. Check your internet connection
+          </div>
+        `;
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Create Test Post';
+      }
+    }
+  </script>
+</body>
+</html>
