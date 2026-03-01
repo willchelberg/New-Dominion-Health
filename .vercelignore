@@ -1,0 +1,5 @@
+# Force Vercel to rebuild and ignore cache
+.vercel
+node_modules
+dist
+.next
