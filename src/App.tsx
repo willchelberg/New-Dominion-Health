@@ -12,7 +12,7 @@ import { AuthorBioPage } from "./pages/AuthorBioPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { CleanupPage } from "./pages/CleanupPage";
 import { RefTagger } from "./components/RefTagger";
-import { Toaster } from "sonner@2.0.3";
+import { Toaster } from "sonner";
 import { type BlogPost } from "./utils/blogServiceUnified";
 import { supabase } from "./utils/supabase/client";
 import {
