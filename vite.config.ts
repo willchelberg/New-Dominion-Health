@@ -8,6 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './'),
+      // Redirect any figma:asset imports to a placeholder
+      'figma:asset': '/logo.png'
     },
   },
   server: {

@@ -1,5 +1,13 @@
-# Force Vercel to rebuild and ignore cache
-.vercel
-node_modules
-dist
-.next
+# Documentation files
+*.md
+!README.md
+
+# Sanity Studio (if not needed in production)
+sanity.cli.ts
+sanity.config.ts
+
+# Scripts
+scripts/
+
+# Guidelines
+guidelines/
