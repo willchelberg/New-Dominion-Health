@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Card, CardContent } from "./ui/card";
 import { useState, useEffect } from "react";
 import { getAllPosts, type BlogPost } from "../utils/blogServiceUnified";
 import { getAuthorSlugByName } from "../utils/authorService";
