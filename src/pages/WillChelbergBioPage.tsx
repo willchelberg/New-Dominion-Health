@@ -1,5 +1,4 @@
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import profileImage from "figma:asset/d052b77dc9a403998062642649c916c66e50c516.png";
 
 export function WillChelbergBioPage() {
   return (

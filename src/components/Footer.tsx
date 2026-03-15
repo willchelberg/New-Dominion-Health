@@ -1,6 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
 import { Button } from "./ui/button";
-import xLogo from "figma:asset/b9e520bf0ff37c8790cf4584b415bebe071a60ad.png";
 
 interface FooterProps {
   onNavigate: (page: string) => void;

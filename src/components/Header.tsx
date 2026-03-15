@@ -1,8 +1,6 @@
 import { Instagram, Facebook, Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
-import logo from "figma:asset/d25c2a38ec754977ee0deeafbcb71f67dde388f8.png";
-import xLogo from "figma:asset/b9e520bf0ff37c8790cf4584b415bebe071a60ad.png";
 
 interface HeaderProps {
   currentPage: string;
