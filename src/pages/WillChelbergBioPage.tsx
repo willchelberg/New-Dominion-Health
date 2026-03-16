@@ -9,10 +9,11 @@ export function WillChelbergBioPage() {
           <div className="md:col-span-5 lg:col-span-4">
             <div className="mb-10 aspect-[4/5] relative overflow-hidden rounded-sm shadow-sm border border-[#C6C0B4]/20">
               <ImageWithFallback 
-                src={profileImage} 
-                alt="Will Chelberg" 
-                className="w-full h-full object-cover"
-              />
+  src="https://res.cloudinary.com/dklxii2kg/image/upload/v1773596394/will-chelberg_ppuaiz.jpg"
+  alt="Will Chelberg" 
+  className="w-full h-full object-cover"
+/>
+
             </div>
           </div>
 
