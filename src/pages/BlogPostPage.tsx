@@ -1,5 +1,7 @@
 import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
+import { Button } from "../components/ui/button";
+import { ArrowLeft, Facebook, Printer, Link2, Upload, Calendar, Linkedin, Instagram } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { SEO } from "../components/SEO";
 import { type BlogPost } from "../utils/blogServiceUnified";
