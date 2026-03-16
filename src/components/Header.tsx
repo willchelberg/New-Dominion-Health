@@ -68,7 +68,11 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             onClick={() => onNavigate('home')} 
             className="absolute left-1/2 transform -translate-x-1/2 hover:opacity-90 transition-opacity"
           >
-            <ImageWithFallback src="https://res.cloudinary.com/dklxii2kg/image/upload/v1773596505/logo_vtswvi.png" alt="New Dominion Health" className="w-44 h-44 md:w-48 md:h-48 object-contain"
+            <ImageWithFallback 
+  src="https://res.cloudinary.com/dklxii2kg/image/upload/v1773596505/logo_vtswvi.png" 
+  alt="New Dominion Health" 
+  className="w-44 h-44 md:w-48 md:h-48 object-contain"
+/>
           
           {/* Right side - Social icons (hidden on mobile) */}
           <div className="hidden md:flex gap-2">
