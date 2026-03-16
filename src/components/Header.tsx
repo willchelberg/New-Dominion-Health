@@ -1,7 +1,8 @@
-import { Instagram, Facebook, Menu, X } from "lucide-react";
+import { Instagram, Facebook, Menu, X, Twitter } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
 import { ImageWithFallback } from './figma/ImageWithFallback';
+
 interface HeaderProps {
   currentPage: string;
   onNavigate: (page: string) => void;
@@ -69,10 +70,11 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             className="absolute left-1/2 transform -translate-x-1/2 hover:opacity-90 transition-opacity"
           >
             <ImageWithFallback 
-  src="https://res.cloudinary.com/dklxii2kg/image/upload/v1773596505/logo_vtswvi.png" 
-  alt="New Dominion Health" 
-  className="w-44 h-44 md:w-48 md:h-48 object-contain"
-/>
+              src="https://res.cloudinary.com/dklxii2kg/image/upload/v1773596505/logo_vtswvi.png"
+              alt="New Dominion Health" 
+              className="w-44 h-44 md:w-48 md:h-48 object-contain"
+            />
+          </button>
           
           {/* Right side - Social icons (hidden on mobile) */}
           <div className="hidden md:flex gap-2">
@@ -88,7 +90,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             </Button>
             <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/10" asChild>
               <a href="https://x.com/newdominionhlth" target="_blank" rel="noopener noreferrer">
-                <img src={xLogo} alt="X (Twitter)" className="w-4 h-4 brightness-0 invert" />
+                <Twitter className="w-4 h-4" />
               </a>
             </Button>
           </div>
