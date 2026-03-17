@@ -67,17 +67,18 @@ export function Hero({ onNavigate, refreshKey, cachedLatest }: HeroProps) {
 
               {/* Compact Substack Newsletter Subscription */}
               <div className="space-y-3">
-                <div className="bg-[#F1EFED] rounded-lg p-4 max-w-md">
-                  <iframe 
-                    src="https://newdominionhealth.substack.com/embed" 
-                    width="100%" 
-                    height="150" 
-                    style={{ border: 'none', background: 'transparent' }} 
-                    frameBorder="0" 
-                    scrolling="no"
-                    title="Subscribe to newsletter"
-                  />
-                </div>
+                <div className="bg-[#F1EFED] rounded-lg p-4 max-w-md overflow-hidden">
+  <iframe 
+    src="https://newdominionhealth.substack.com/embed" 
+    width="100%" 
+    height="150" 
+    style={{ border: 'none', background: 'transparent', maxWidth: '100%' }} 
+    frameBorder="0" 
+    scrolling="no"
+    sandbox="allow-scripts allow-forms allow-same-origin allow-popups-to-escape-sandbox"
+    title="Subscribe to newsletter"
+  />
+</div>
                 <p className="text-sm text-[#64767C]">
                   
                 </p>

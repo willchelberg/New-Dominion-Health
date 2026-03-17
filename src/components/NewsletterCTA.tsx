@@ -23,16 +23,17 @@ export function NewsletterCTA({ compact = false }: NewsletterCTAProps) {
 
           {/* Substack Embed */}
           <div className="max-w-md mx-auto">
-            <div className="bg-white rounded-lg p-4 shadow-lg">
+            <div className="bg-white rounded-lg p-4 shadow-lg overflow-hidden">
               <iframe 
-                src="https://newdominionhealth.substack.com/embed" 
-                width="100%" 
-                height="320" 
-                style={{ border: 'none', background: 'white' }} 
-                frameBorder="0" 
-                scrolling="no"
-                title="Subscribe to New Dominion Health newsletter"
-              />
+  src="https://newdominionhealth.substack.com/embed" 
+  width="100%" 
+  height="320" 
+  style={{ border: 'none', background: 'white', maxWidth: '100%' }} 
+  frameBorder="0" 
+  scrolling="no"
+  sandbox="allow-scripts allow-forms allow-same-origin allow-popups-to-escape-sandbox"
+  title="Subscribe to New Dominion Health newsletter"
+/>
             </div>
             <p className="text-sm text-white/70 mt-3">
               Unsubscribe anytime.

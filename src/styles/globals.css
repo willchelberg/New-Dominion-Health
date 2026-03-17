@@ -202,3 +202,20 @@
 html {
   font-size: var(--font-size);
 }
+/* Prevent iframe content from breaking page layout */
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
+/* Ensure main app container has proper stacking context */
+#root {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+/* Prevent body overflow from iframe content */
+body {
+  overflow-x: hidden;
+}
