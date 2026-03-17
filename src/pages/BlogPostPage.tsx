@@ -306,12 +306,12 @@ export function BlogPostPage({ post, onNavigate }: BlogPostPageProps) {
               </button>
               
               <button
-  onClick={() => handleShare('twitter')}
-  className="w-10 h-10 flex items-center justify-center rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
-  title="Share on Twitter"
->
-  <TwitterXIcon className="w-5 h-5 text-[#6E6D5F]" />
-</button>
+                onClick={() => handleShare('twitter')}
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
+                title="Share on Twitter"
+              >
+                <TwitterXIcon className="w-5 h-5 text-[#6E6D5F]" />
+              </button>
               
               <button
                 onClick={() => handleShare('print')}
@@ -448,12 +448,12 @@ export function BlogPostPage({ post, onNavigate }: BlogPostPageProps) {
                   Facebook
                 </button>
                 <button
-  onClick={() => handleShare('twitter')}
-  className="px-4 py-2 flex items-center gap-2 rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
->
-  <TwitterXIcon className="w-4 h-4 text-[#6E6D5F]" />
-  Twitter
-</button>
+                  onClick={() => handleShare('twitter')}
+                  className="px-4 py-2 flex items-center gap-2 rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
+                >
+                  <TwitterXIcon className="w-4 h-4 text-[#6E6D5F]" />
+                  Twitter
+                </button>
                 <button
                   onClick={() => handleShare('linkedin')}
                   className="px-4 py-2 flex items-center gap-2 rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
