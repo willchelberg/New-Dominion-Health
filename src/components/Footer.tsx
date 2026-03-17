@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, Twitter } from "lucide-react";
 import { Button } from "./ui/button";
 
 interface FooterProps {
