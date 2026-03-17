@@ -55,7 +55,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 </Button>
                 <Button variant="outline" size="icon" asChild>
                   <a href="https://x.com/newdominionhlth" target="_blank" rel="noopener noreferrer">
-                    <img src={xLogo} alt="X (Twitter)" className="w-3.5 h-3.5" />
+                    <Twitter className="w-3.5 h-3.5" />
                   </a>
                 </Button>
               </div>
