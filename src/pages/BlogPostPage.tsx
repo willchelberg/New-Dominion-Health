@@ -11,7 +11,7 @@ import { addAuthorLinksToHTML, attachAuthorLinkHandlers } from "../utils/authorL
 import { getAuthorSlugByName } from "../utils/authorService";
 
 // Custom X (Twitter) Icon Component
-const XIcon = ({ className }: { className?: string }) => (
+const TwitterXIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" className={className} fill="currentColor">
     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
   </svg>
@@ -306,12 +306,12 @@ export function BlogPostPage({ post, onNavigate }: BlogPostPageProps) {
               </button>
               
               <button
-                onClick={() => handleShare('twitter')}
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
-                title="Share on Twitter"
-              >
-                <XIcon className="w-5 h-5 text-[#6E6D5F]" />
-              </button>
+  onClick={() => handleShare('twitter')}
+  className="w-10 h-10 flex items-center justify-center rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
+  title="Share on Twitter"
+>
+  <TwitterXIcon className="w-5 h-5 text-[#6E6D5F]" />
+</button>
               
               <button
                 onClick={() => handleShare('print')}
@@ -448,12 +448,12 @@ export function BlogPostPage({ post, onNavigate }: BlogPostPageProps) {
                   Facebook
                 </button>
                 <button
-                  onClick={() => handleShare('twitter')}
-                  className="px-4 py-2 flex items-center gap-2 rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
-                >
-                  <XIcon className="w-4 h-4 text-[#6E6D5F]" />
-                  Twitter
-                </button>
+  onClick={() => handleShare('twitter')}
+  className="px-4 py-2 flex items-center gap-2 rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
+>
+  <TwitterXIcon className="w-4 h-4 text-[#6E6D5F]" />
+  Twitter
+</button>
                 <button
                   onClick={() => handleShare('linkedin')}
                   className="px-4 py-2 flex items-center gap-2 rounded-full bg-[#F1EFED] hover:bg-[#C6C0B4] transition-colors"
