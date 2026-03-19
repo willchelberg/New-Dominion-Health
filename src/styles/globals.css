@@ -1,13 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 @import 'tailwindcss';
-/* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --font-size: 16px;
   --font-display: 'Chapman Medium Cond', 'Arial Narrow', 'Helvetica Condensed', sans-serif;
-  --font-body: 'Baskerville URW Med', 'Libre Baskerville', serif;
+  --font-body: 'Libre Baskerville', serif;
   --color-heading: #1A2227;
   --color-nav-bg: #64767C;
   --color-olive: #6E6D5F;
