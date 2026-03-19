@@ -13,11 +13,11 @@ export function NewsletterCTA({ compact = false }: NewsletterCTAProps) {
             <Mail className={compact ? "w-6 h-6 text-white" : "w-8 h-8 text-white"} />
           </div>
           
-          <h2 className={compact ? "text-2xl md:text-3xl text-white mb-3" : "text-3xl md:text-4xl text-white mb-4"}>
+          <h2 className={compact ? "text-3xl md:text-4xl text-white mb-3" : "text-4xl md:text-5xl text-white mb-4"}>
             Stay connected with us
           </h2>
           
-          <p className={compact ? "text-base text-white/90 mb-6 max-w-xl mx-auto leading-relaxed" : "text-lg text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed"}>
+          <p className={compact ? "text-base text-white/90 mb-6 max-w-xl mx-auto leading-relaxed" : "text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed"}>
             Receive weekly articles delivered straight to your inbox.
           </p>
 

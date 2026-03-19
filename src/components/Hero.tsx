@@ -56,11 +56,11 @@ export function Hero({ onNavigate, refreshKey, cachedLatest }: HeroProps) {
             {/* Left Section - Content */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-5xl md:text-6xl leading-tight mb-6">
+                <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
                   Christ-Centered Health & Wellness
                 </h1>
                 
-                <p className="text-[#64767C] text-lg md:text-xl leading-relaxed max-w-md">
+                <p className="text-[#64767C] text-2xl md:text-3xl leading-relaxed max-w-2xl">
                   Discover practical, biblical insights for a Christ-centered approach to health and wellness.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export function Hero({ onNavigate, refreshKey, cachedLatest }: HeroProps) {
             <div className="relative">
               <div className="absolute -left-8 top-0 bottom-0 flex items-center">
                 <span 
-                  className="text-xs tracking-[0.3em] text-[#64767C] uppercase"
+                  className="text-sm tracking-[0.3em] text-[#64767C] uppercase"
                   style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
                 >
                   Featured

@@ -33,21 +33,21 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
           <nav className="hidden md:flex gap-8" style={{ fontFamily: 'var(--font-display)' }}>
             <button 
               onClick={() => onNavigate('home')}
-              className="text-white text-lg tracking-wide transition-all hover:opacity-80 relative group"
+              className="text-white text-xl tracking-wide transition-all hover:opacity-80 relative group"
             >
               Home
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C6C0B4] transition-all group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => onNavigate('about')}
-              className="text-white text-lg tracking-wide transition-all hover:opacity-80 relative group"
+              className="text-white text-xl tracking-wide transition-all hover:opacity-80 relative group"
             >
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C6C0B4] transition-all group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => onNavigate('blog')}
-              className="text-white text-lg tracking-wide transition-all hover:opacity-80 relative group"
+              className="text-white text-xl tracking-wide transition-all hover:opacity-80 relative group"
             >
               Read
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C6C0B4] transition-all group-hover:w-full"></span>
