@@ -7,7 +7,7 @@
 :root {
   --font-size: 16px;
   --font-display: 'Chapman Medium Cond', 'Arial Narrow', 'Helvetica Condensed', sans-serif;
-  --font-body: 'Baskerville URW Med', 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Baskerville URW Med', 'Libre Baskerville', serif;
   --color-heading: #1A2227;
   --color-nav-bg: #64767C;
   --color-olive: #6E6D5F;
