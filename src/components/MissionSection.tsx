@@ -11,11 +11,11 @@ export function MissionSection({ onNavigate }: MissionSectionProps) {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl mb-6">
+            <h2 className="text-4xl md:text-5xl mb-6">
               Why New Dominion Health Exists
             </h2>
             <div className="max-w-3xl mx-auto space-y-4">
-              <p className="text-xl md:text-2xl text-[#1A2227] leading-relaxed">
+              <p className="text-lg md:text-xl text-[#1A2227] leading-relaxed">
                 We exist to share how to magnify Christ through stewarding our bodies for His glory and our joy.
               </p>
             </div>
