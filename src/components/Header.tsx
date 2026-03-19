@@ -30,7 +30,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
       <div className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between max-w-6xl mx-auto">
           {/* Left side - Desktop navigation */}
-          <nav className="hidden md:flex gap-8" style={{ fontFamily: 'var(--font-display)' }}>
+          <nav className="hidden md:flex gap-8">
             <button 
               onClick={() => onNavigate('home')}
               className="text-white text-xl tracking-wide transition-all hover:opacity-80 relative group"
@@ -56,10 +56,9 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
 
           {/* Mobile hamburger button with Menu text */}
           <button
-            className="md:hidden flex items-center gap-2 text-white transition-opacity hover:opacity-80"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
+  className="md:hidden flex items-center gap-2 text-white transition-opacity hover:opacity-80"
+  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+>
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             <span className="text-base tracking-wide">Menu</span>
           </button>
@@ -102,9 +101,8 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <nav 
-            className="md:hidden pt-4 pb-2 flex flex-col gap-4 border-t border-white/20 mt-4" 
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
+  className="md:hidden pt-4 pb-2 flex flex-col gap-4 border-t border-white/20 mt-4"
+>
             <button 
               onClick={() => handleNavigate('home')}
               className="text-white text-lg text-left tracking-wide transition-opacity hover:opacity-80"
