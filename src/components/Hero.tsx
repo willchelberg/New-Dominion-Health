@@ -56,11 +56,11 @@ export function Hero({ onNavigate, refreshKey, cachedLatest }: HeroProps) {
             {/* Left Section - Content */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-6xl md:text-7xl leading-tight mb-6">
+                <h1 className="text-5xl md:text-6xl leading-tight mb-6">
                   Christ-Centered Health & Wellness
                 </h1>
                 
-                <p className="text-[#64767C] text-2xl md:text-3xl leading-relaxed max-w-2xl">
+                <p className="text-[#64767C] text-xl md:text-2xl leading-relaxed max-w-2xl">
                   Discover practical, biblical insights for a Christ-centered approach to health and wellness.
                 </p>
               </div>
