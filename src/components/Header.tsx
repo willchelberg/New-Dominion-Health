@@ -34,6 +34,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             <button 
               onClick={() => onNavigate('home')}
               className="text-white text-xl tracking-wide transition-all hover:opacity-80 relative group"
+              style={{ fontFamily: 'var(--font-display)' }}
             >
               Home
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C6C0B4] transition-all group-hover:w-full"></span>
@@ -41,6 +42,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             <button 
               onClick={() => onNavigate('about')}
               className="text-white text-xl tracking-wide transition-all hover:opacity-80 relative group"
+              style={{ fontFamily: 'var(--font-display)' }}
             >
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C6C0B4] transition-all group-hover:w-full"></span>
@@ -48,6 +50,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             <button 
               onClick={() => onNavigate('blog')}
               className="text-white text-xl tracking-wide transition-all hover:opacity-80 relative group"
+              style={{ fontFamily: 'var(--font-display)' }}
             >
               Read
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C6C0B4] transition-all group-hover:w-full"></span>
@@ -56,9 +59,10 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
 
           {/* Mobile hamburger button with Menu text */}
           <button
-  className="md:hidden flex items-center gap-2 text-white transition-opacity hover:opacity-80"
-  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
->
+            className="md:hidden flex items-center gap-2 text-white transition-opacity hover:opacity-80"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{ fontFamily: 'var(--font-display)' }}
+          >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             <span className="text-base tracking-wide">Menu</span>
           </button>
@@ -100,24 +104,25 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <nav 
-  className="md:hidden pt-4 pb-2 flex flex-col gap-4 border-t border-white/20 mt-4"
->
+          <nav className="md:hidden pt-4 pb-2 flex flex-col gap-4 border-t border-white/20 mt-4">
             <button 
               onClick={() => handleNavigate('home')}
               className="text-white text-lg text-left tracking-wide transition-opacity hover:opacity-80"
+              style={{ fontFamily: 'var(--font-display)' }}
             >
               Home
             </button>
             <button 
               onClick={() => handleNavigate('about')}
               className="text-white text-lg text-left tracking-wide transition-opacity hover:opacity-80"
+              style={{ fontFamily: 'var(--font-display)' }}
             >
               About
             </button>
             <button 
               onClick={() => handleNavigate('blog')}
               className="text-white text-lg text-left tracking-wide transition-opacity hover:opacity-80"
+              style={{ fontFamily: 'var(--font-display)' }}
             >
               Read
             </button>
