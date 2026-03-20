@@ -1,6 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+@font-face {
+  font-family: 'Chapman Medium Cond';
+  src: url('/fonts/Chapman-MediumCondensed.woff2') format('woff2'),
+       url('/fonts/Chapman-MediumCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
